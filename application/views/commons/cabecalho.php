@@ -136,8 +136,8 @@
               <i class="fa fa-angle-left pull-right"></i>
             </span>
             <ul class="treeview-menu menu-open" style="display: none;">
-              <li><a href="/cadastrar"><i class="fa fa-angle-double-right"></i>Cadastrar</a></li>
-              <li><a href="/listarcliente"><i class="fa fa-angle-double-right"></i>Listar</a></li>
+              <li><a href="<?=base_url('/cadastrar');?>"><i class="fa fa-angle-double-right"></i>Cadastrar</a></li>
+              <li><a href="<?=base_url('/listarcliente');?>"><i class="fa fa-angle-double-right"></i>Listar</a></li>
             </ul>
           </a>
         </li>
