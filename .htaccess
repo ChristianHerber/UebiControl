@@ -1,7 +1,1 @@
-RewriteEngine on
-RewriteBase /control/
-Options FollowSymLinks
-RewriteCond %{SCRIPT_FILENAME} !-f
-RewriteCond %{SCRIPT_FILENAME} !-d
-RewriteRule (.+) /control/
-DirectoryIndex index.php
+
