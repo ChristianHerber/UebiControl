@@ -123,13 +123,14 @@
 
 <script src="<?=base_url('assets/js/inputmask.min.js') ?>"></script>
 <script>
+$(document).ready(function(){
 	var cp = $("#CnpjCliente").val();
 	if (length(cp)=11) {
 		$("#CnpjCliente").inputmask("(99)9999-9999");		
 	}else{
 		$("#CnpjCliente").inputmask("99.999.999/9999-99");
 	}
-	 
+})	 
 </script>
 </body>
 </html>
