@@ -1,3 +1,4 @@
+<?php require_once('../restrito.php'); ?>
 <!DOCTYPE html>
 <html>
 <head>
