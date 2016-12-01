@@ -123,14 +123,48 @@
 
 <script src="<?=base_url('assets/js/mask/mask.js') ?>"></script>
 <script>
-	jQuery(function(){
-		var cp = $("#CnpjCliente").val();
+
+	$("#CnpjCliente").focusout(function(event) {
+
+		var cp = $(this).val();
+		alert(cp.length);
+
 		if (cp.length==11) {
 			$("#CnpjCliente").mask("999.999.999-99");		
-		}else{
+		}else if (cp.length==14){
 			$("#CnpjCliente").mask("99.999.999/9999-99");
-		}
-	})	 
+		}else{
+			$("#CnpjCliente").val("Valor Digitado INCORRETO!!!").css('color', 'red');
+		}	
+
+	});
+
+	$("#CnpjCliente").focusin(function(event) {
+		$(this).unmask().css('color', '#000').val('');
+	});
+
+	$("#TelefoneCliente").mask("(99)9999-9999");
+
+	$("#CelularCliente").focusout(function(event) {
+
+		var cp = $(this).val();
+		alert(cp.length);
+
+		if (cp.length==10) {
+			$("#CelularCliente").mask("(99)9999-9999");		
+		}else if (cp.length==11){
+			$("#CelularCliente").mask("(99)9 9999-9999");
+		}else{
+			$("#CelularCliente").val("Valor Digitado INCORRETO!!!").css('color', 'red');
+		}	
+
+	});
+
+	$("#CelularCliente").focusin(function(event) {
+		$(this).unmask().css('color', '#000').val('');
+	});
+
+
 </script>
 </body>
 </html>
