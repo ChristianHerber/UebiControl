@@ -125,7 +125,7 @@
 <script>
 	jQuery(function(){
 		var cp = $("#CnpjCliente").val();
-		if (length(cp)=11) {
+		if (cp.length==11) {
 			$("#CnpjCliente").mask("999.999.999-99");		
 		}else{
 			$("#CnpjCliente").mask("99.999.999/9999-99");
