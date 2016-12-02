@@ -11,4 +11,3 @@ $route['salvar'] = "Base/Salvar";
 $route['editar/(:num)'] = "Base/Editar/$1";
 $route['atualizar'] = "Base/Atualizar";
 $route['excluir/(:num)'] = "Base/Excluir/$1";
-$route['login'] = 'login/login';
