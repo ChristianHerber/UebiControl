@@ -63,7 +63,7 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="<?=base_url('assets/img/eu.jpg');?>" width="160" height="160" class="user-image" alt="User Image">
-              <span class="hidden-xs">Christian Herber</span>
+              <span class="hidden-xs"><?php echo $username; ?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -95,7 +95,7 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div> -->
                 <div class="pull-right">
-                  <a href="#" class="btn btn-danger btn-flat">Sair</a>
+                  <a href="home/logout" class="btn btn-danger btn-flat">Sair</a>
                 </div>
               </li>
             </ul>
