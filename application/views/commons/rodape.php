@@ -127,7 +127,6 @@
 	$("#CnpjCliente").focusout(function(event) {
 
 		var cp = $(this).val();
-		alert(cp.length);
 
 		if (cp.length==11) {
 			$("#CnpjCliente").mask("999.999.999-99");		
@@ -148,14 +147,13 @@
 	$("#CelularCliente").focusout(function(event) {
 
 		var cp = $(this).val();
-		alert(cp.length);
 
 		if (cp.length==10) {
 			$("#CelularCliente").mask("(99)9999-9999");		
 		}else if (cp.length==11){
 			$("#CelularCliente").mask("(99)9 9999-9999");
 		}else{
-			$("#CelularCliente").val("Valor Digitado INCORRETO!!!").css('color', 'red');
+			$("#CelularCliente").val("INCORRETO!!!").css('color', 'red');
 		}	
 
 	});
