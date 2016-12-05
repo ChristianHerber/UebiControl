@@ -6,10 +6,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'mysql.hostinger.com.br',
-	'username' => 'u216029098_uebi',
-	'password' => 'M5evIzJFvl',
-	'database' => 'u216029098_uebi',
+	'hostname' => '',
+	'username' => '',
+	'password' => '',
+	'database' => '',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
