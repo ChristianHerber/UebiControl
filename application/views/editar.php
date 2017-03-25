@@ -76,13 +76,14 @@
 
             <div class="form-group col-lg-6 col-md-6">
               <label for="CidadeCliente">Cidade</label>
-        			  <select name="cidade" class="form-control" value="<?=$contato['cidade']?>" id="CidadeCliente"/>
+              <input type="text" name="cidade" class="form-control" value="<?=$contato['site']?>" id="CidadeCliente" placeholder="nome da Cidade"/>
+<!--         			  <select name="cidade" class="form-control" value="<?=$contato['cidade']?>" id="CidadeCliente"/>
         				<option value="Tangara da Serra" selected="selected">Tangará da Serra</option>
         				<option value="Campo Novo do Parecis">Campo Novo do Parecis</option>
         				<option value="Barra do Bugres">Barra do Bugres</option>
         				<option value="Nova Olímpia">Nova Olímpia</option>
         				<option value="Vilhena - RO">Vilhena - RO</option>
-        			  </select>
+        			  </select> -->
             </div>
 
             <div class="form-group col-lg-6 col-md-6">
@@ -92,11 +93,15 @@
 
             <div class="form-group col-lg-11 col-md-11">
               <label for="ServicoCliente">Serviço Prestado</label>
-      			   <select name="servico" class="form-control" id="ServicoCliente" required/>
-      				  <option value="Website" selected="selected">Website</option>
-      				  <option value="Facebook">Facebook</option>
-      				  <option value="E-mail Marketing">E-mail Marketing</option>
-      			  </select>
+               <select name="servico" class="form-control" id="ServicoCliente" required/>
+                <option value="" selected="selected">- Escolha os serviços -</option>
+                <option value="Identidade Visual">Identidade Visual</option>
+                <option value="Adwords">AdWords</option>
+                <option value="Gestão de Conteúdo">Gestão de Conteúdo</option>
+                <option value="Website">Website</option>
+                <option value="Facebook">Facebook</option>
+                <option value="E-mail Marketing">E-mail Marketing</option>
+              </select>
               <input type="hidden" name="servico" value="<?=$contato['servico']?>" id="ClienteServ"/>
             </div>
             <div class="form-group col-lg-1 col-md-1">

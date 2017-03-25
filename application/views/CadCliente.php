@@ -95,11 +95,11 @@
             <div class="form-group col-lg-11 col-md-11">
               <label for="ServicoCliente">Serviço Prestado</label>
       			   <select name="servico" class="form-control" id="ServicoCliente" required/>
-                <option value=""selected="selected">- Escolha os serviços -</option>
-                <option value="Visual">Identidade Visual</option>
-                <option value="Adwords">Google AdWords</option>
-                <option value="Conteudo">Gestão de Conteúdo</option>
-      				  <option value="Website">Des. Website</option>
+                <option value="" selected="selected">- Escolha os serviços -</option>
+                <option value="Identidade Visual">Identidade Visual</option>
+                <option value="Adwords">AdWords</option>
+                <option value="Gestão de Conteúdo">Gestão de Conteúdo</option>
+      				  <option value="Website">Website</option>
       				  <option value="Facebook">Facebook</option>
       				  <option value="E-mail Marketing">E-mail Marketing</option>
       			  </select>

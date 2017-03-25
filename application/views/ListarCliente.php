@@ -58,16 +58,6 @@
 										</button>
 									</a>
 
-									<script>
-										function apagar(id) {
-										     var resposta = confirm("Deseja remover esse registro?");
-										 
-										     if (resposta == true) {
-										          window.location.href = "remover.php?id="+id;
-										     }
-										}
-									</script>
-
 								</td>
 							</tr>
 						<?php endforeach; ?>
