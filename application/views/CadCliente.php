@@ -77,7 +77,7 @@
 
             <div class="form-group col-lg-6 col-md-6">
               <label for="CidadeCliente">Cidade</label>
-              <input type="url" name="cidade" class="form-control" value="<?=set_value('cidade')?>" id="CidadeCliente" placeholder="nome da Cidade"/>
+              <input type="text" name="cidade" class="form-control" value="<?=set_value('cidade')?>" id="CidadeCliente" placeholder="nome da Cidade"/>
 <!--         			  <select name="cidade" class="form-control" value="<?=set_value('cidade')?>" id="CidadeCliente"/>
         				<option value="Tangara da Serra" selected="selected">Tangará da Serra</option>
         				<option value="Campo Novo do Parecis">Campo Novo do Parecis</option>
