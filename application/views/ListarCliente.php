@@ -52,11 +52,22 @@
 											<i class="fa fa-eye" style="color:#fff;" aria-hidden="true"></i>
 										</button>
 									</a>
-									<a href="<?= $row['excluir_url'] ?>">
+									<a href="">
 										<button class="btn btn-xs btn-danger" onclick="ConfirmDelete()">
 											<i class="fa fa-times" style="color:#fff;" aria-hidden="true"></i>
 										</button>
 									</a>
+
+									<script>
+										function ConfirmDelete(id) {
+										     var resposta = confirm("Deseja remover esse registro?");
+										 
+										     if (resposta == true) {
+										          // window.location.href = "remover.php?id="+id; 
+										          window.location.href = <?= $row['excluir_url'] ?>; 
+										     }
+										}
+									</script>
 
 								</td>
 							</tr>
