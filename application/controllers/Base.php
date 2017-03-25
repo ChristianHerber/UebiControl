@@ -36,6 +36,15 @@ class Base extends CI_Controller {
 
 	public function ListarCliente(){
 		// Recupera os contatos através do model
+		$contatos = $this->contatos_model->GetAll('nome');
+		// Passa os contatos para o array que será enviado à home
+		$dados['contatos'] =$this->contatos_model->Formatar($contatos);
+		// Chama a home enviando um array de dados a serem exibidos
+		$this->load->view('ListarCliente',$dados);
+	}
+
+	public function ListarClienteFace(){
+		// Recupera os contatos através do model
 		$facebook = $this->facebook_model->GetAll('nome');
 		// Passa os contatos para o array que será enviado à home
 		$dados['contatos'] =$this->facebook_model->Formatar($facebook);
@@ -43,14 +52,15 @@ class Base extends CI_Controller {
 		$this->load->view('ListarCliente',$dados);
 	}
 
-	// public function ListarClienteFace(){
-	// 	// Recupera os contatos através do model
-	// 	$contatos = $this->contatos_model->GetAll('nome');
-	// 	// Passa os contatos para o array que será enviado à home
-	// 	$dados['contatos'] =$this->contatos_model->Formatar($contatos);
-	// 	// Chama a home enviando um array de dados a serem exibidos
-	// 	$this->load->view('ListarCliente',$dados);
-	// }
+	public function ListarClienteSite(){
+		// Recupera os contatos através do model
+		$site = $this->site_model->GetAll('nome');
+		// Passa os contatos para o array que será enviado à home
+		$dados['contatos'] =$this->site_model->Formatar($site);
+		// Chama a home enviando um array de dados a serem exibidos
+		$this->load->view('ListarCliente',$dados);
+	}
+
 
 	/**
   * Processa o formulário para salvar os dados
