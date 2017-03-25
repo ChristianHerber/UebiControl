@@ -41,7 +41,7 @@
             <div class="icon">
               <i class="ion ion-person-add"></i>
             </div>
-            <a href="/sist/listarclienteface" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="/sist/listarcliente" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
 
