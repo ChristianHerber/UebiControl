@@ -36,12 +36,22 @@ class Base extends CI_Controller {
 
 	public function ListarCliente(){
 		// Recupera os contatos através do model
-		$contatos = $this->contatos_model->GetAll('nome');
+		$facebook = $this->facebook_model->GetAll('nome');
 		// Passa os contatos para o array que será enviado à home
-		$dados['contatos'] =$this->contatos_model->Formatar($contatos);
+		$dados['contatos'] =$this->facebook_model->Formatar($facebook);
 		// Chama a home enviando um array de dados a serem exibidos
 		$this->load->view('ListarCliente',$dados);
 	}
+
+	// public function ListarClienteFace(){
+	// 	// Recupera os contatos através do model
+	// 	$contatos = $this->contatos_model->GetAll('nome');
+	// 	// Passa os contatos para o array que será enviado à home
+	// 	$dados['contatos'] =$this->contatos_model->Formatar($contatos);
+	// 	// Chama a home enviando um array de dados a serem exibidos
+	// 	$this->load->view('ListarCliente',$dados);
+	// }
+
 	/**
   * Processa o formulário para salvar os dados
   */
@@ -139,7 +149,7 @@ class Base extends CI_Controller {
 		if(is_null($id))
 			redirect();
 
-		// Remove o registro do banco de dados recuperando o status dessa operação
+		// Remove o registro do banco de dados recuperando o status dessa operação 
 		$status = $this->contatos_model->Excluir($id);
 
 		// Checa o status da operação gravando a mensagem na seção

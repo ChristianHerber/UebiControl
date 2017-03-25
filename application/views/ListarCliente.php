@@ -53,7 +53,7 @@
 										</button>
 									</a>
 									<a href="<?= $row['excluir_url'] ?>">
-										<button class="btn btn-xs btn-danger" onclick="apagar()">
+										<button class="btn btn-xs btn-danger">
 											<i class="fa fa-times" style="color:#fff;" aria-hidden="true"></i>
 										</button>
 									</a>
