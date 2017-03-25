@@ -64,7 +64,7 @@
             <div class="icon">
               <i class="fa fa-facebook"></i>
             </div>
-            <a href="/sist/ListaClienteFace" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="/sist/ListarClienteFace" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
 
@@ -87,7 +87,7 @@
             <div class="icon">
               <i class="fa fa-code"></i>
             </div>
-            <a href="/sist/ListaClienteSite" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="/sist/ListarClienteSite" class="small-box-footer">Ver <i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
 
